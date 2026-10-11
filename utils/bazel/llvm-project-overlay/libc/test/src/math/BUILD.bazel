@@ -302,6 +302,16 @@ math_mpfr_test(
 )
 
 math_mpfr_test(
+    name = "fmaxf",
+    hdrs = ["FMaxTest.h"],
+)
+
+math_mpfr_test(
+    name = "fminf",
+    hdrs = ["FMinTest.h"],
+)
+
+math_mpfr_test(
     name = "f16add",
     hdrs = ["AddTest.h"],
 )
@@ -531,16 +541,6 @@ math_mpfr_test(
 )
 
 math_mpfr_test(
-    name = "ilogbf",
-    hdrs = ["ILogbTest.h"],
-)
-
-math_mpfr_test(
-    name = "ldexpf",
-    hdrs = ["LdExpTest.h"],
-)
-
-math_mpfr_test(
     name = "llrint",
     hdrs = ["RoundToIntegerTest.h"],
 )
@@ -726,11 +726,6 @@ math_mpfr_test(
     deps = [
         "//libc:__support_cpp_array",
     ],
-)
-
-math_mpfr_test(
-    name = "nextafterf",
-    hdrs = ["NextAfterTest.h"],
 )
 
 math_mpfr_test(name = "pow")
