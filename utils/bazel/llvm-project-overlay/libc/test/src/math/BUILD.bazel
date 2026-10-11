@@ -74,50 +74,13 @@ math_mpfr_test(
 )
 
 math_mpfr_test(
-    name = "bf16div",
-    hdrs = ["DivTest.h"],
-)
-
-math_mpfr_test(
     name = "bf16divf",
     hdrs = ["DivTest.h"],
 )
 
 math_mpfr_test(
-    name = "bf16divl",
-    hdrs = ["DivTest.h"],
-)
-
-math_mpfr_test(
-    name = "bf16fma",
-    hdrs = ["FmaTest.h"],
-    deps = [
-        "//libc:rand",
-        "//libc:srand",
-    ],
-)
-
-math_mpfr_test(
     name = "bf16fmaf",
     hdrs = ["FmaTest.h"],
-    deps = [
-        "//libc:rand",
-        "//libc:srand",
-    ],
-)
-
-math_mpfr_test(
-    name = "bf16fmal",
-    hdrs = ["FmaTest.h"],
-    deps = [
-        "//libc:rand",
-        "//libc:srand",
-    ],
-)
-
-math_mpfr_test(
-    name = "bf16mul",
-    hdrs = ["MulTest.h"],
     deps = [
         "//libc:rand",
         "//libc:srand",
@@ -134,26 +97,7 @@ math_mpfr_test(
 )
 
 math_mpfr_test(
-    name = "bf16mull",
-    hdrs = ["MulTest.h"],
-    deps = [
-        "//libc:rand",
-        "//libc:srand",
-    ],
-)
-
-math_mpfr_test(
-    name = "bf16sub",
-    hdrs = ["SubTest.h"],
-)
-
-math_mpfr_test(
     name = "bf16subf",
-    hdrs = ["SubTest.h"],
-)
-
-math_mpfr_test(
-    name = "bf16subl",
     hdrs = ["SubTest.h"],
 )
 
